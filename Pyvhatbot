@@ -1,0 +1,27 @@
+pip3 install chatterbot
+pip3 install python-
+levenshtein 
+
+from chatterbot import ChatBot
+chatbot = ChatBot('Brandon',trainer='chatterbot.trainers.ListTrainer')
+response = chatbot.get_response("Hi there")
+print(response)
+[8/10, 6:50 AM] Vicky: from chatterbot import ChatBot
+chatbot = ChatBot('Brandon',trainer='chatterbot.trainers.ListTrainers')
+chatbot.train([
+    "Hello",
+    "Hi there!",
+    "How are you doing",
+    "I'm doing great, how about you",
+    "That is good to hear",
+    "Thank you",
+    "You're welcome"
+])
+chatbot.train([
+    "Good bye!",
+    "See you soon!"
+])
+
+ python3 Train.py
+
+python3 ChatBot.py
